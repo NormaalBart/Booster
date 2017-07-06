@@ -1,0 +1,65 @@
+GUI:
+  ##All the options for Charity Time
+  Charity-Time:
+    ##Should it display when the kitpvp mode is turned on(true)?
+    KitPvPMode: false
+    Material: DIAMOND
+    Name: "&3»&a Charity Time &6($$$)"
+    Lore:
+      ##When the booster is enabled
+      When-Enabled: 
+        - " "
+        - "&7This booster will give everyone"
+        - "&7online &a15.000&7 every 10 minutes!"
+        - "&7All the players will love you!"
+        - " "
+        - "&7You currently have &a{CHARITYBOOSTER}&7 charityboosters!"
+        - "&7Purchase at &awww.brutalnetwork.org"
+        - ""
+        - "&7Booster &a&lActive &2({TIME})"
+        - "&7This booster was activated by&a {PLAYER}" 
+        - ""
+      ##When the booster is disabled
+      When-Disabled: 
+        - " "
+        - "&7This booster will give everyone"
+        - "&7online &a15.000&7 every 10 minutes!"
+        - "&7All the players will love you!"
+        - " "
+        - "&7You currently have &a{CHARITYBOOSTER}&7 charityboosters!"
+        - "&7Purchase at &awww.brutalnetwork.org"
+        - ""
+        - "&7Booster &c&ldisabled"
+        - "" 
+  ##All the options for Charity Time
+  Booster-Time:
+    ##Should it display when the kitpvp mode is turned on(true)?
+    KitPvPMode: true
+    Material: EMERALD
+    Name: "&3»&a Market Sell Multiplier &6(2x)"
+    Lore:
+      ##When the booster is enabled
+      When-Enabled: 
+        - " "
+        - "&7This booster allows all players"
+        - "&7to receive &a2x&7 as much money"
+        - "&7when selling there resources!"
+        - " "
+        - "&7You currently have &a{BOOSTER}&7 boosters!"
+        - "&7Purchase at &awww.brutalnetwork.org"
+        - ""
+        - "&7Booster &a&lActive &2({TIME})"
+        - "&7This booster was activated by&a {PLAYER}" 
+        - ""
+      ##When the booster is disabled
+      When-Disabled: 
+        - " "
+        - "&7This booster allows all players"
+        - "&7to receive &a2x&7 as much money"
+        - "&7when selling there resources!"
+        - " "
+        - "&7You currently have &a{BOOSTER}&7 boosters!"
+        - "&7Purchase at &awww.brutalnetwork.org"
+        - ""
+        - "&7Booster &c&ldisabled"
+        - ""

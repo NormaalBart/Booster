@@ -1,0 +1,11 @@
+name: Booster
+version: 0.0.1
+author: Bart // NormaalBart
+main: me.BrutalNetwork.Balkan.Utils.Main
+commands:
+  booster:
+    aliases: [boosters]
+  boosteradmin:
+    aliases: [boosteradmin]
+  tip:
+  

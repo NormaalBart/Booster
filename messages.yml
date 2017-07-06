@@ -1,0 +1,127 @@
+############################################
+#                                          #
+#                                          #
+#                 Booster                  #
+#     Made by: BrutalNetwork // Bart       #
+#                                          #
+#                                          #
+############################################
+
+
+KitPvP:
+  ##Is the server a KitPVP server?
+  isKitPvP: false
+  ##How much do you get by default (NOTE: with no multiplier)
+  moneyEarned: 1.0
+  ##When a booster is enabled, what is the multiply?
+  multiply: 3.5
+  ##Does the Kill Message display's or not? (NOTE: When there is a multiplier enabled, this won't be displayed in the kill message but you still get the money. 
+  KillMessageEnabled: true
+  ##What message do you get when you kill someone?
+  Message: "&3» &7You killed &a{TARGET}&7 and received &a${MONEY}"
+  
+Tip:
+   ##When you try to tip yourself
+   TipYourself: "&3» &cYou can't tip yourself!"
+   ##How much money do tipped players get?
+   Money: 10000.0
+   ##What message does the player get when there aren't any boosters running?
+   NoBoosters: "&3» &cThere aren't any boosters running! Try again later"
+   ##What message does the player get who tipped the person's?
+   Message: "&3» &7You tipped &a{PLAYER}&7!"
+   ##What message does the player who got tipped get?
+   TargetMessage: "&3» &7You got a tip from &a{PLAYER}&7! You received &a{MONEY}&7!"
+   ##What does the player get when he already tipped the player(s)?
+   AlreadyTipped: "&3» &cYou have already tipped these boosters!"
+  
+Booster:
+   ##How long does the booster exists? (NOTE: in seconds...)
+   Time: 600
+   ##Does the server know when a booster is activated ? 
+   notifyServer: true
+   ##If true, what does it say to the other people?
+   message:
+     - "&8==========================            "
+     - "&7                                      "
+     - "&7          Booster started by          "
+     - "&a             {PLAYER}                 "
+     - "&7                                      " 
+     - "&8==========================            "
+   endmessage:
+     - "&8==========================            "
+     - "&7                                      "
+     - "&7           Booster ended!             "
+     - "&7      Thanks to &a{PLAYER}&7 for      "
+     - "&7          starting the booster        " 
+     - "&8==========================            "
+MoneyBooster:
+   ##How many times do the player's get a boost?
+   Times: 5
+   ##Time between when a player get money (NOTE: in seconds...)
+   Time: 300
+   ##How much do the players get?
+   Money: 15000.0
+   ##Does the server know when a moneybooster is activated ? 
+   notifyServer: true
+   ##If true, what does it say to the other people?
+   message:
+     - "&8=========================="
+     - "&7 "
+     - "&7There is a moneybooster started by"
+     - "&a           {PLAYER}"
+     - "&7 "
+     - "&8=========================="
+   ##This message will display over the hole server, that you got money from the moneybooster event.
+   broadcastMessage:
+     - "&8==========================            "
+     - "&7                                      "
+     - "&7You got &a{MONEY} &7because &a{PLAYER}"
+     - "&7      Started a moneybooster!         "
+     - "&7        {TIMES} times left            "
+     - "&8==========================            "
+   endbroadcastMessage:
+     - "&8==========================            "
+     - "&7                                      "
+     - "&7        MoneyBooster ended!           "
+     - "&7      Thanks to &a{PLAYER}&7 for      "
+     - "&7       starting the moneyBooster      " 
+     - "&8==========================            "
+     
+#When there is already an activated booster
+ActiveBooster: "&3» &7There is already a booster active"
+##When a booster is getting activated (NOTE: this message will be send to the player who activated the booster)
+BoosterActivated: "&3» &7The booster is activated! You have right now &a{BOOSTER} &7booster(s)!"
+##This message will display when someone added some boosters to your account
+BoosterAdded: "&3» &7{AMOUNT} &7boosters are added to your account"
+##This message will display for the person who added the Boosters to the target's account
+AdminBoosterAdded: "&3» &a{AMOUNT} &7boosters are added to &a{TARGET}'s &7account!"
+##This message will display when someone removed some boosters of your account
+BoosterRemoved: "&3» &a{AMOUNT} &7boosters are removed form your account"
+##This message will display for the person who removed the boosters from the target's account
+AdminBoosterRemoved: "&3» &a{AMOUNT} &7boosters are removed from &a{TARGET}'s &7account!"
+##This message will display when someone setted the boosters of your account
+BoosterSetted: "&3» &7You're boosters are setted to {AMOUNT}"
+##This message will display for the person who setted the booster of the target's acount
+AdminBoosterSetted: "&3» &7You set the &a{AMOUNT} &7boosters for &a{TARGET}&7 account!"
+##This message will display when someone added some moneyboosters to your account
+moneyboosterAdded: "&3» &a{AMOUNT} &7moneyboosters are added to your account"
+##This message will display for the person who added the moneyboosters to the target"s account
+AdminmoneyboosterAdded: "&3» &a{AMOUNT} &7moneyboosters are added to &a{TARGET}'s &7account!"
+##This message will display when someone removed some moneyboosters of your account
+moneyboosterRemoved: "&3» &a{AMOUNT} &7moneyboosters are removed form your account"
+##This message will display for the person who removed the moneyboosters from the target"s account
+AdminmoneyboosterRemoved: "&3» &a{AMOUNT} &7moneyboosters are removed from &a{TARGET}'s &7account!"
+##This message will display when someone setted the moneyboosters of your account
+MoneyBoosterSetted: "&3» &7You're moneyboosters are setted to {AMOUNT}"
+##This message will display for the person who setted the moneybooster of the target's acount
+AdminMoneyBoosterSetted: "&3» &7You set the &a{AMOUNT} &7moneyboosters for &a{TARGET}&7 account!"
+##This message will display when you don"t have any boosters
+NoBooster: "&3» &7You currently don't have any boosters!"
+##This message will display when you don"t have the right permission!
+NoPermission: "&cYou don't have the right permissions to do this"
+##When an arg isn"t a number but supposed to be a number
+NumberFormat: "&c{ARG} needs to be a number!"
+##When someone usages /boosteradmin(s) but didn"t put in the right format
+FormatException: "&cUsage: /BoosterAdmin (Booster/MoneyBooster) (Add/Rem/Remove/Set) (Player) (Amount)"
+##When a player isn"t online...
+PlayerNotOnline: "&c{ARG} isn't online..."
